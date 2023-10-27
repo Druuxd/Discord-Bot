@@ -1,5 +1,6 @@
 import discord
 import responses
+import botapi
 
 client = discord.Client(intents=discord.Intents.default())
 intents = discord.Intents.default()
@@ -15,7 +16,7 @@ async def send_message(message, user_message, username, is_private):
 
 
 def run_discord_bot():
-    TOKEN = 'MTEwNTE1NjQ4NDc4Mzk1MTk5NA.GVfew9.IdCbb90DV17T3dVi0BXANvaQDRL-urMXfYeXlg'
+    TOKEN = botapi.id
     client = discord.Client(intents=intents)
 
     @client.event
