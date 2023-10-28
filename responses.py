@@ -14,10 +14,12 @@ def handle_response(message, id) -> str:
     print(f"Received message: {p_message}")  # Log
 
     if p_message.startswith("anime:"):
+        # Only take the thing written after "anime:"
         anime_name = p_message.replace('anime:', '').strip()
         print(anime_name)  # Log to see if everything is working as it should
 
         # Set the URL for the MyAnimeList search page
+        # Replace spaces with "+"
         url = f"https://myanimelist.net/anime.php?q={anime_name.replace(' ', '+')}"
         print(url)  # Log
 
@@ -62,7 +64,7 @@ def handle_response(message, id) -> str:
                     "fields": "main_picture,rank,mean,num_episodes,status,alternative_titles"
                 }
 
-                # Found all the tags i guess i can call them, on the api config page from MAL
+                # Found all the tags on the api config page from MAL
 
                 # Set the X-MAL-CLIENT-ID header (Found this in the same post as line:47)
                 headers = {
@@ -94,7 +96,7 @@ def handle_response(message, id) -> str:
         else:
             return f"<@{id}>Failed to connect to MyAnimeList."
 
-    # Manga is the same, just keywords changed
+    # Manga is the same as anime, just keywords changed
     if p_message.startswith("manga:"):
         manga_name = p_message.replace('manga:', '').strip()
         print(manga_name)
@@ -124,7 +126,7 @@ def handle_response(message, id) -> str:
                 manga_id = manga_id_match.group(
                     1) if manga_id_match else "Manga ID not found"
 
-                client_id = myapi.id  # MAL API
+                client_id = myapi.id
 
                 url = f"https://api.myanimelist.net/v2/manga/{manga_id}"
                 print(url)
@@ -176,4 +178,4 @@ def handle_response(message, id) -> str:
         return f"<@{id}> , {str(random.randint(1, 100))} !"
 
     if p_message == '!help':
-        return f"`<@{id}> , no.`"
+        return f"<@{id}> `, no.`"
