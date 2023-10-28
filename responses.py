@@ -159,10 +159,10 @@ def handle_response(message, id) -> str:
         else:
             return f"<@{id}>Failed to connect to MyAnimeList."
 
-    if p_message == 'ce campion sa ma joc pe lol?':
+    if p_message == 'what champion should i play?':
         return f"<@{id}> Hmmmm, Malphite or Garen!"
 
-    if p_message == '!ce campion sa ma joc pe lol?':
+    if p_message == '!what champion should i play?':
         return f"<@{id}> Hmmmm, try {random_champion}"
 
     if p_message == 'tuff':
