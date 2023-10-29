@@ -168,9 +168,6 @@ def handle_response(message, id) -> str:
     if p_message == 'tuff':
         return f"<@{id}> , Tuff rau ngl!"
 
-    if p_message == 'sad':
-        return f"<@{id}> , You should KILL YOURSELF, NOW!"
-
     if p_message == 'hello':
         return f"<@{id}> , Hey there!"
 
