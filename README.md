@@ -10,7 +10,6 @@ I am a very big manga and anime enthusiast and I also use Dicord quite a while. 
 
 - Search for details about anime and manga directly from Discord.
 - Utilizes the MyAnimeList API to provide accurate and up-to-date information.
-- Supports both anime and manga queries.
 - Provides information such as title, rank, mean score, number of episodes/chapters, and status.
 - Scraping with BeautifulSoup, enabling efficient parsing of HTML content.
 
