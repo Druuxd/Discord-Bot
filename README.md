@@ -50,9 +50,9 @@ I am a very big manga and anime enthusiast and I also use Dicord quite a while. 
 
 - !commands: Shows a list of commands.
 
-- anime:[anime title]: Search for details about a specific anime.
+- anime:**[anime title]**: Search for details about a specific anime.
 
-- manga:[manga title]: Search for details about a specific manga.
+- manga:**[manga title]**: Search for details about a specific manga.
 
 ## Example Usage
 
