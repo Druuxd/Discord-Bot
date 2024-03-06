@@ -1,4 +1,4 @@
-# Lurk, the Discord Bot
+# Lurk, the Discord Bot 🤖
 
 A Discord bot developed in Python to provide information about anime and manga using the MyAnimeList API.
 
