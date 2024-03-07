@@ -29,7 +29,7 @@ I am a very big manga and anime enthusiast and I also use Dicord quite a while. 
 ## Installation
 
 1. Clone this repository:
-`git clone https://github.com/your-username/anime-manga-discord-bot.git`
+`git clone https://github.com/Druuxd/Discord-Bot.git`
 
 2. Install the required dependencies:
 `pip install -r requirements.txt`
