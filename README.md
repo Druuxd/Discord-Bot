@@ -1,25 +1,27 @@
 # Lurk, the Discord Bot 🤖
 
-A Discord bot developed in Python to provide information about anime and manga using the MyAnimeList API.
+Lurk is a Discord bot crafted in Python, designed to provide instant access to information about anime and manga using the MyAnimeList API.
 
 ## Introduction
 
-I am a very big manga and anime enthusiast and I also use Dicord quite a while. I knew about MyAnimeList so I thought to myself "Why not try and make a bot that can easily give me the details about any Anime or Manga that I'm interested in?", and that's the story behin **Lurk**.
+I am a very big Manga and Anime enthusiast and I also use Dicord quite a lot. I knew about MyAnimeList so I thought to myself "Why not try and make a bot that can easily give me the details about any Anime or Manga that I'm interested in?", and that's the story behin how I came up with the idea of **Lurk**.
 
 ## Features
 
-- Search for details about anime and manga directly from Discord.
-- Utilizes the MyAnimeList API to provide accurate and up-to-date information.
-- Provides information such as title, rank, mean score, number of episodes/chapters, and status.
-- Scraping with BeautifulSoup, enabling efficient parsing of HTML content.
+- **Effortless Information Retrieval**: Instantly fetch details about anime and manga directly from Discord.
+- **Real-time Data**: Utilizes the MyAnimeList API to ensure accurate and up-to-date information.
+- **Comprehensive Details**: Provides essential information such as title, rank, mean score, episode/chapter count, and status.
+- **Efficient Parsing**: Employs BeautifulSoup for efficient parsing of HTML content, ensuring smooth operation.
 
-## How to Use
+## Getting Started
 
-1. Invite the bot to your Discord server.
-2. Type '?' followed by either 'anime:' or 'manga:' and the title of the anime or manga you want to search for.
-3. The bot will respond with detailed information about the requested anime or manga.
+1. **Invite Lurk**: Add the bot to your Discord server.
+2. **Simple Querying**: Type 'anime:' or 'manga:', followed by the title you're interested in.
+3. **Instant Response**: Lurk will promptly provide detailed information about the requested anime or manga.
 
 ## Requirements
+
+Ensure you have the following dependencies installed:
 
 - Python 3.x
 - Discord.py
@@ -28,30 +30,33 @@ I am a very big manga and anime enthusiast and I also use Dicord quite a while. 
 
 ## Installation
 
-1. Clone this repository:
-`git clone https://github.com/Druuxd/Discord-Bot.git`
+1. **Clone the Repository**:
+  `git clone https://github.com/Druuxd/Discord-Bot.git`
 
-2. Install the required dependencies:
-`pip install -r requirements.txt`
+2. **Install Dependencies**:
+  `pip install -r requirements.txt`
 
-3. Run the bot:
-`python main.py`
+3. **Run the Bot**:
+  `python main.py`
 
-## Obtain API keys:
 
-- [MyAnimeList API](https://myanimelist.net/apiconfig)
+## Obtaining API Keys
 
-- Replace **TOKEN** from **bot.py** and **client_id** from **responses.py** with your own bot token and your cliend id, from MyAnimeList.
-  - I used two separate *.py* files to store them, you can use *.env, .txt, etc.* Or just replace them directly in the code.
+To enable the bot's functionality, you'll need API keys from MyAnimeList and a Discord Bot's TOKEN. Follow these steps:
+
+- **Create a Discord Application and obtain the BOT TOKEN**: [Create Discord BOT](https://discord.com/developers/applications)
+- **Obtain MyAnimeList API Key**: [MyAnimeList API](https://myanimelist.net/apiconfig)
+- **Update Credentials**: Replace 'TOKEN' in 'bot.py' and 'client_id' in 'responses.py' with your own API credentials.
+
+(*Note: For security purposes, consider using separate credential files or environmental variables.*)
 
 ## Commands
-**If you use '?' before any command, the bot will respond with a DM**
 
-- !commands: Shows a list of commands.
+**Use '?' before any command to receive a DM response from the bot.**
 
-- anime:**[anime title]**: Search for details about a specific anime.
-
-- manga:**[manga title]**: Search for details about a specific manga.
+- `!commands`: Displays a list of available commands.
+- `anime:[anime title]`: Search for details about a specific anime.
+- `manga:[manga title]`: Search for details about a specific manga.
 
 ## Example Usage
 
@@ -59,8 +64,8 @@ I am a very big manga and anime enthusiast and I also use Dicord quite a while. 
 
 ## Credits
 
-This project was developed by *Darius Andrei*.
+This project was developed by Darius Andrei.
 
 ## Disclaimer
 
-This bot is developed for educational purposes and is not affiliated with MyAnimeList or Discord.
+Lurk is an educational project and is not affiliated with MyAnimeList or Discord.
