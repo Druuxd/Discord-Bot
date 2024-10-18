@@ -154,7 +154,7 @@ def handle_response(message, id) -> str:
                 else:
                     return f"<@{id}>Failed to retrieve data from MyAnimeList API. Status Code: {response.status_code}"
             else:
-                return f"<@{id}>Manga not found."
+                return f"<@{id}>Manga not found"
 
         else:
             return f"<@{id}>Failed to connect to MyAnimeList."
@@ -166,7 +166,7 @@ def handle_response(message, id) -> str:
         return f"<@{id}> Hmmmm, try {random_champion}"
 
     if p_message == 'tuff':
-        return f"<@{id}> , Tuff rau ngl!"
+        return f"<@{id}> , Tuff rau ngl!" #x
 
     if p_message == 'hello':
         return f"<@{id}> , Hey there!"
